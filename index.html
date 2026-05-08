@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zainab Akinlosotu Portfolio</title>
-
-
+<title>Zainab Akinlosotu — Portfolio</title>
+ 
+ 
 <style>
   :root {
-    --cream: #f5f0e8;
-    --ink: #1a1410;
-    --terracotta: #c4622d;
-    --gold: #c9993a;
-    --light-tan: #e8dfd0;
-    --warm-mid: #8a7560;
-    --light-tan: #e8dfd0;
-    --surface: #ede7da;
+    --cream: #f5f0d5;
+    --ink: #1e2d5a;
+    --terracotta: #f0b429;
+    --gold: #e6a817;
+    --sage: #3a5298;
+    --warm-mid: #4a5e8a;
+    --light-tan: #d6dff0;
+    --surface: #e8ecf5;
   }
-
+ 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     background: var(--cream);
     color: var(--ink);
@@ -29,7 +29,7 @@
     font-weight: 300;
     overflow-x: hidden;
   }
-
+ 
   /* ── NAV ── */
   nav {
     position: fixed;
@@ -43,7 +43,7 @@
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(26,20,16,0.08);
   }
-
+ 
   .nav-logo {
     font-family: 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
     font-size: 1.3rem;
@@ -52,13 +52,13 @@
     color: var(--ink);
     text-decoration: none;
   }
-
+ 
   .nav-links {
     display: flex;
     gap: 2.5rem;
     list-style: none;
   }
-
+ 
   .nav-links a {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.72rem;
@@ -68,9 +68,9 @@
     text-decoration: none;
     transition: color 0.2s;
   }
-
+ 
   .nav-links a:hover { color: var(--terracotta); }
-
+ 
   /* ── HERO ── */
   #hero {
     min-height: 100vh;
@@ -79,7 +79,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .hero-left {
     display: flex;
     flex-direction: column;
@@ -88,7 +88,7 @@
     position: relative;
     z-index: 2;
   }
-
+ 
   .hero-tag {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.7rem;
@@ -99,7 +99,7 @@
     opacity: 0;
     animation: fadeUp 0.8s 0.2s forwards;
   }
-
+ 
   .hero-name {
     font-family: 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
     font-size: clamp(3.5rem, 6vw, 6rem);
@@ -110,12 +110,12 @@
     opacity: 0;
     animation: fadeUp 0.8s 0.4s forwards;
   }
-
+ 
   .hero-name em {
     font-style: italic;
     color: var(--terracotta);
   }
-
+ 
   .hero-desc {
     margin-top: 2rem;
     font-size: 1.05rem;
@@ -125,7 +125,7 @@
     opacity: 0;
     animation: fadeUp 0.8s 0.6s forwards;
   }
-
+ 
   .hero-cta {
     margin-top: 3rem;
     display: flex;
@@ -134,7 +134,7 @@
     opacity: 0;
     animation: fadeUp 0.8s 0.8s forwards;
   }
-
+ 
   .btn-primary {
     background: var(--terracotta);
     color: #fff;
@@ -146,9 +146,9 @@
     text-transform: uppercase;
     transition: background 0.2s, transform 0.2s;
   }
-
+ 
   .btn-primary:hover { background: var(--ink); transform: translateY(-2px); }
-
+ 
   .btn-outline {
     border: 1px solid var(--ink);
     color: var(--ink);
@@ -160,9 +160,9 @@
     text-transform: uppercase;
     transition: background 0.2s, color 0.2s, transform 0.2s;
   }
-
+ 
   .btn-outline:hover { background: var(--ink); color: var(--cream); transform: translateY(-2px); }
-
+ 
   .hero-right {
     position: relative;
     background: var(--surface);
@@ -171,7 +171,7 @@
     justify-content: center;
     overflow: hidden;
   }
-
+ 
   .hero-graphic {
     position: absolute;
     inset: 0;
@@ -179,14 +179,14 @@
     align-items: center;
     justify-content: center;
   }
-
+ 
   .hero-graphic svg {
     width: 100%;
     height: 100%;
     opacity: 0;
     animation: fadeIn 1.2s 0.5s forwards;
   }
-
+ 
   .hero-stat-card {
     position: absolute;
     background: #fff;
@@ -195,11 +195,11 @@
     opacity: 0;
     animation: fadeUp 0.8s forwards;
   }
-
+ 
   .stat-card-1 { bottom: 14%; left: 8%; animation-delay: 1s; }
   .stat-card-2 { top: 18%; right: 8%; animation-delay: 1.2s; }
   .stat-card-3 { top: 48%; left: 12%; animation-delay: 1.4s; }
-
+ 
   .stat-num {
     font-family: 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
     font-size: 2.4rem;
@@ -207,7 +207,7 @@
     color: var(--terracotta);
     line-height: 1;
   }
-
+ 
   .stat-label {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.62rem;
@@ -216,76 +216,76 @@
     color: var(--warm-mid);
     margin-top: 0.3rem;
   }
-
+ 
   /* ── SECTION BASE ── */
   section { padding: 7rem 4rem; }
-
+ 
   .section-header {
     display: flex;
     align-items: baseline;
     gap: 1.5rem;
     margin-bottom: 4rem;
   }
-
+ 
   .section-num {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.7rem;
     color: var(--terracotta);
     letter-spacing: 0.1em;
   }
-
+ 
   .section-title {
     font-family: 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
     font-size: clamp(2rem, 4vw, 3.2rem);
     font-weight: 300;
     color: var(--ink);
   }
-
+ 
   .section-line {
     flex: 1;
     height: 1px;
     background: var(--light-tan);
     margin-left: 1rem;
   }
-
+ 
   /* ── ABOUT ── */
   #about {
     background: var(--ink);
     color: var(--cream);
   }
-
+ 
   #about .section-title { color: var(--cream); }
   #about .section-line { background: rgba(245,240,232,0.15); }
   #about .section-num { color: var(--gold); }
-
+ 
   .about-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 5rem;
     align-items: start;
   }
-
+ 
   .about-text {
     font-size: 1.1rem;
     line-height: 1.9;
     color: rgba(245,240,232,0.8);
   }
-
+ 
   .about-text p + p { margin-top: 1.2rem; }
-
+ 
   .about-text strong { color: var(--gold); font-weight: 500; }
-
+ 
   .about-details {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-
+ 
   .detail-item {
     border-top: 1px solid rgba(245,240,232,0.12);
     padding-top: 1.2rem;
   }
-
+ 
   .detail-key {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.65rem;
@@ -294,22 +294,22 @@
     color: var(--gold);
     margin-bottom: 0.4rem;
   }
-
+ 
   .detail-val {
     font-size: 0.95rem;
     color: rgba(245,240,232,0.75);
     line-height: 1.5;
   }
-
+ 
   /* ── PROJECTS ── */
   #projects { background: var(--cream); }
-
+ 
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2px;
   }
-
+ 
   .project-card {
     background: var(--surface);
     padding: 3rem;
@@ -318,7 +318,7 @@
     transition: background 0.3s;
     cursor: default;
   }
-
+ 
   .project-card::before {
     content: '';
     position: absolute;
@@ -327,10 +327,10 @@
     background: var(--terracotta);
     transition: width 0.4s ease;
   }
-
+ 
   .project-card:hover::before { width: 100%; }
   .project-card:hover { background: var(--light-tan); }
-
+ 
   .project-tag {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.65rem;
@@ -339,7 +339,7 @@
     color: var(--terracotta);
     margin-bottom: 1rem;
   }
-
+ 
   .project-title {
     font-family: 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
     font-size: 1.7rem;
@@ -348,21 +348,21 @@
     color: var(--ink);
     margin-bottom: 1rem;
   }
-
+ 
   .project-desc {
     font-size: 0.9rem;
     line-height: 1.75;
     color: var(--warm-mid);
     margin-bottom: 1.8rem;
   }
-
+ 
   .project-finding {
     background: var(--ink);
     color: var(--cream);
     padding: 1.2rem 1.5rem;
     margin-bottom: 1.5rem;
   }
-
+ 
   .finding-label {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.6rem;
@@ -371,19 +371,19 @@
     color: var(--gold);
     margin-bottom: 0.3rem;
   }
-
+ 
   .finding-text {
     font-size: 0.88rem;
     line-height: 1.6;
     color: rgba(245,240,232,0.85);
   }
-
+ 
   .project-tools {
     display: flex;
     gap: 0.6rem;
     flex-wrap: wrap;
   }
-
+ 
   .tool-chip {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.62rem;
@@ -392,16 +392,16 @@
     padding: 0.3rem 0.7rem;
     color: var(--warm-mid);
   }
-
+ 
   /* ── EXPERIENCE ── */
   #experience { background: var(--surface); }
-
+ 
   .exp-list {
     display: flex;
     flex-direction: column;
     gap: 0;
   }
-
+ 
   .exp-item {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -410,11 +410,11 @@
     border-top: 1px solid var(--light-tan);
     transition: padding-left 0.3s;
   }
-
+ 
   .exp-item:hover { padding-left: 1rem; }
-
+ 
   .exp-meta { }
-
+ 
   .exp-period {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.68rem;
@@ -422,15 +422,15 @@
     color: var(--terracotta);
     margin-bottom: 0.4rem;
   }
-
+ 
   .exp-org {
     font-size: 0.82rem;
     color: var(--warm-mid);
     line-height: 1.4;
   }
-
+ 
   .exp-content { }
-
+ 
   .exp-role {
     font-family: 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
     font-size: 1.4rem;
@@ -438,14 +438,14 @@
     color: var(--ink);
     margin-bottom: 0.8rem;
   }
-
+ 
   .exp-bullets {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
-
+ 
   .exp-bullets li {
     font-size: 0.88rem;
     line-height: 1.6;
@@ -453,7 +453,7 @@
     padding-left: 1.2rem;
     position: relative;
   }
-
+ 
   .exp-bullets li::before {
     content: '→';
     position: absolute;
@@ -461,21 +461,21 @@
     color: var(--terracotta);
     font-size: 0.75rem;
   }
-
+ 
   /* ── SKILLS ── */
   #skills { background: var(--cream); }
-
+ 
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2px;
   }
-
+ 
   .skill-group {
     background: var(--surface);
     padding: 2.5rem;
   }
-
+ 
   .skill-group-title {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.68rem;
@@ -486,13 +486,13 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--light-tan);
   }
-
+ 
   .skill-tags {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
   }
-
+ 
   .skill-tag {
     font-size: 0.9rem;
     color: var(--ink);
@@ -501,13 +501,13 @@
     transition: border-color 0.2s, color 0.2s, padding-left 0.2s;
     cursor: default;
   }
-
+ 
   .skill-tag:hover {
     border-color: var(--terracotta);
     color: var(--terracotta);
     padding-left: 0.5rem;
   }
-
+ 
   /* ── CONTACT ── */
   #contact {
     background: var(--ink);
@@ -515,7 +515,7 @@
     text-align: center;
     padding: 8rem 4rem;
   }
-
+ 
   .contact-eyebrow {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.68rem;
@@ -524,7 +524,7 @@
     color: var(--gold);
     margin-bottom: 2rem;
   }
-
+ 
   .contact-headline {
     font-family: 'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif;
     font-size: clamp(2.5rem, 5vw, 5rem);
@@ -533,12 +533,12 @@
     color: var(--cream);
     margin-bottom: 1.5rem;
   }
-
+ 
   .contact-headline em {
     font-style: italic;
     color: var(--terracotta);
   }
-
+ 
   .contact-sub {
     font-size: 1rem;
     color: rgba(245,240,232,0.55);
@@ -548,14 +548,14 @@
     margin-right: auto;
     line-height: 1.8;
   }
-
+ 
   .contact-links {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
   }
-
+ 
   .contact-link {
     font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Courier New', monospace;
     font-size: 0.72rem;
@@ -567,20 +567,20 @@
     padding: 0.9rem 1.8rem;
     transition: background 0.2s, border-color 0.2s, transform 0.2s;
   }
-
+ 
   .contact-link:hover {
     background: var(--terracotta);
     border-color: var(--terracotta);
     transform: translateY(-2px);
   }
-
+ 
   .contact-link.primary {
     background: var(--terracotta);
     border-color: var(--terracotta);
   }
-
+ 
   .contact-link.primary:hover { background: var(--gold); border-color: var(--gold); }
-
+ 
   /* ── FOOTER ── */
   footer {
     background: #0f0c09;
@@ -593,30 +593,30 @@
     font-size: 0.65rem;
     letter-spacing: 0.1em;
   }
-
+ 
   /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-
+ 
   @keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
   }
-
+ 
   /* scroll reveal */
   .reveal {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.7s ease, transform 0.7s ease;
   }
-
+ 
   .reveal.visible {
     opacity: 1;
     transform: translateY(0);
   }
-
+ 
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     nav { padding: 1rem 2rem; }
@@ -634,7 +634,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">Zainab Akinlosotu</a>
@@ -646,7 +646,7 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-left">
@@ -719,7 +719,7 @@
         <text x="240" y="260" font-family="'Palatino Linotype', 'Palatino', 'Book Antiqua', 'Georgia', serif" font-size="120" fill="#c4622d" opacity="0.06" font-weight="600">Z</text>
       </svg>
     </div>
-
+ 
     <div class="hero-stat-card stat-card-1">
       <div class="stat-num">4.0</div>
       <div class="stat-label">Major GPA</div>
@@ -734,7 +734,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ABOUT -->
 <section id="about">
   <div class="section-header reveal">
@@ -773,7 +773,7 @@
       </div>
       <div class="detail-item">
         <div class="detail-key">Career Interest</div>
-        <div class="detail-val">Operations Research Analyst in Energy Sector</div>
+        <div class="detail-val">Operations Research Analyst — Energy Sector</div>
       </div>
       <div class="detail-item">
         <div class="detail-key">Graduation</div>
@@ -782,7 +782,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- PROJECTS / RESEARCH -->
 <section id="projects">
   <div class="section-header reveal">
@@ -791,7 +791,7 @@
     <div class="section-line"></div>
   </div>
   <div class="projects-grid">
-
+ 
     <div class="project-card reveal">
       <div class="project-tag">Operations Research · Optimization · Energy</div>
       <h3 class="project-title">Offshore Oil Rig Maintenance Scheduling Optimization</h3>
@@ -810,7 +810,7 @@
         <span class="tool-chip">SUSRC 2026</span>
       </div>
     </div>
-
+ 
     <div class="project-card reveal">
       <div class="project-tag">Independent Research · Finance · Data Analysis</div>
       <h3 class="project-title">Data Breach Severity & Stock Price Impact Analysis</h3>
@@ -819,7 +819,7 @@
       </p>
       <div class="project-finding">
         <div class="finding-label">Key Finding</div>
-        <div class="finding-text">R² ≈ 0.00006 in breach size explains less than 0.01% of post-disclosure stock price variation. 60% of breached companies showed positive returns post-disclosure, upending common assumptions about market punishment.</div>
+        <div class="finding-text">R² ≈ 0.00006 — breach size explains less than 0.01% of post-disclosure stock price variation. 60% of breached companies showed positive returns post-disclosure, upending common assumptions about market punishment.</div>
       </div>
       <div class="project-tools">
         <span class="tool-chip">Statistical Analysis</span>
@@ -829,10 +829,10 @@
         <span class="tool-chip">SUSRC 2026</span>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-header reveal">
@@ -841,14 +841,14 @@
     <div class="section-line"></div>
   </div>
   <div class="exp-list">
-
+ 
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-period">Jan 2026 – Present</div>
         <div class="exp-org">Salisbury University</div>
       </div>
       <div class="exp-content">
-        <div class="exp-role">Supplemental Instruction Leader in INFO 211</div>
+        <div class="exp-role">Supplemental Instruction Leader — INFO 211</div>
         <ul class="exp-bullets">
           <li>Lead structured study sessions for undergraduate students in Information Systems 211, reinforcing core computing concepts and analytical methods</li>
           <li>Design session materials, track student progress, and adapt instructional approaches to varying learning needs</li>
@@ -856,7 +856,7 @@
         </ul>
       </div>
     </div>
-
+ 
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-period">Sep 2025 – Present</div>
@@ -871,7 +871,7 @@
         </ul>
       </div>
     </div>
-
+ 
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-period">Aug 2026 (Upcoming)</div>
@@ -886,7 +886,7 @@
         </ul>
       </div>
     </div>
-
+ 
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-period">Apr 2026</div>
@@ -901,10 +901,10 @@
         </ul>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-header reveal">
@@ -913,7 +913,7 @@
     <div class="section-line"></div>
   </div>
   <div class="skills-grid">
-
+ 
     <div class="skill-group reveal">
       <div class="skill-group-title">Analytics & Modeling</div>
       <div class="skill-tags">
@@ -926,7 +926,7 @@
         <div class="skill-tag">SUMIF / COUNTIF</div>
       </div>
     </div>
-
+ 
     <div class="skill-group reveal">
       <div class="skill-group-title">Technical Skills</div>
       <div class="skill-tags">
@@ -939,7 +939,7 @@
         <div class="skill-tag">Operations Research</div>
       </div>
     </div>
-
+ 
     <div class="skill-group reveal">
       <div class="skill-group-title">Professional</div>
       <div class="skill-tags">
@@ -952,10 +952,10 @@
         <div class="skill-tag">Human Resources Concepts</div>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <!-- CONTACT -->
 <section id="contact">
   <p class="contact-eyebrow reveal">Let's Connect</p>
@@ -965,17 +965,17 @@
   </p>
   <div class="contact-links reveal">
     <a href="mailto:zainabakinlosotu4@gmail.com" class="contact-link primary">Send an Email</a>
-    <a href="linkedin.com/in/zainab-akinlosotu" class="contact-link" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/zainab-akinlosotu" class="contact-link" target="_blank">LinkedIn</a>
     <a href="#projects" class="contact-link">View Research</a>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <span>Zainab Akinlosotu · Salisbury University · Perdue School of Business</span>
   <span>Information Systems · Business Analytics · Class of December 2027</span>
 </footer>
-
+ 
 <script>
   // Scroll reveal
   const revealEls = document.querySelectorAll('.reveal');
@@ -989,9 +989,9 @@
       }
     });
   }, { threshold: 0.12 });
-
+ 
   revealEls.forEach(el => observer.observe(el));
-
+ 
   // Stagger sibling reveals
   document.querySelectorAll('.projects-grid, .skills-grid, .exp-list, .about-grid').forEach(container => {
     const children = container.querySelectorAll('.reveal');
